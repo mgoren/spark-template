@@ -21,4 +21,6 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("HOME PAGE HERE");
   }
 
+  
+
 }
