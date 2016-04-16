@@ -8,8 +8,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class AppTest extends FluentTest {
   public WebDriver webDriver = new HtmlUnitDriver();
+  
+  @Override
   public WebDriver getDefaultDriver() {
-      return webDriver;
+    return webDriver;
   }
 
   @ClassRule
@@ -21,6 +23,6 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("HOME PAGE HERE");
   }
 
-  
+   
 
 }
